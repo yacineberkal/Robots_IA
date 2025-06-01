@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Robots Humanoïdes et l’IA</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1b2a;
+      color: #e0e1dd;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, section {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      background-color: #1a1a2e;
+      color: #fca311;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #14213d;
+      border-bottom: 2px solid #fca311;
+    }
+    nav a {
+      color: #fca311;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    section {
+      display: none;
+      background-color: #1b263b;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      margin-top: 2rem;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      border-left: 6px solid #fca311;
+      padding-left: 1rem;
+      color: #fca311;
+      font-size: 1.8rem;
+    }
+    .intro {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    .intro img {
+      max-width: 180px;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #fca311;
+    }
+    .card {
+      padding: 1rem 2rem;
+      line-height: 1.6;
+    }
+    img.illustration {
+      display: block;
+      margin: 1rem auto;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #fca311;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Les Robots Humanoïdes et l'Intelligence Artificielle</h1>
+</header>
+
+<div class="intro">
+  <p>Bienvenue sur ce site dédié à l'évolution des robots humanoïdes de 2000 à 2025. Ce projet présente les recherches menées lors de 4 séances centrées sur la robotique, l'intelligence artificielle, l’apprentissage machine et les questions éthiques que cela soulève.</p>
+  <p>Mais d’abord… <strong>qu’est-ce qu’un robot humanoïde ?</strong> Il s’agit d’un robot conçu pour ressembler à un être humain dans son apparence ou son comportement, et souvent utilisé pour interagir avec les humains ou accomplir des tâches spécifiques.</p>
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Honda_ASIMO.jpg" alt="ASIMO" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Pepper_robot.jpg" alt="Pepper" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Sophia_robot_2018.jpg" alt="Sophia" />
+  </div>
+</div>
+
+<nav>
+  <a onclick="showSection('seance1')">Séance 1</a>
+  <a onclick="showSection('seance2')">Séance 2</a>
+  <a onclick="showSection('seance3')">Séance 3</a>
+  <a onclick="showSection('seance4')">Séance 4</a>
+</nav>
+
+<section id="seance1" class="active">
+  <h2>📘 Séance 1 – Histoire des Robots (2000–2025)</h2>
+  <div class="card">
+    <p>Depuis l’an 2000, les robots humanoïdes ont connu des évolutions impressionnantes. De simples machines programmées, ils sont devenus intelligents, autonomes, parfois même citoyens. Voici une frise chronologique de cette évolution.</p>
+    <ul>
+      <li><strong>2000 – ASIMO :</strong> robot bipède emblématique développé par Honda.</li>
+      <li><strong>2006 – NAO :</strong> robot éducatif programmable utilisé dans les écoles.</li>
+      <li><strong>2011 – Pepper :</strong> robot émotionnel capable de détecter les émotions humaines.</li>
+      <li><strong>2016 – Sophia :</strong> citoyenne robot saoudienne, reconnue mondialement.</li>
+      <li><strong>2020 – Atlas :</strong> robot athlétique capable de sauts et mouvements complexes.</li>
+      <li><strong>2023 – Digit :</strong> robot de livraison bipède utilisé dans les entrepôts.</li>
+      <li><strong>2025 – Figure 01 :</strong> projet de robot d’assistance industrielle avancé.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="seance2">
+  <h2>🤖 Séance 2 – Robots déjà opérationnels</h2>
+  <div class="card">
+    <p>Les pages 78 à 81 présentent les premiers robots réellement utilisés en entreprise ou en service public. Par exemple :</p>
+    <ul>
+      <li><strong>Atlas :</strong> robot de Boston Dynamics, conçu pour les interventions complexes et l’industrie.</li>
+      <li><strong>Digit :</strong> robot bipède capable de porter des charges et d’interagir avec des humains dans des entrepôts.</li>
+      <li><strong>Mirokai :</strong> robot japonais utilisé en hôpital pour surveiller et dialoguer avec les patients.</li>
+      <li><strong>Figure 01 :</strong> projet de robot universel d’assistance dans les usines.</li>
+    </ul>
+    <p>Ces robots ne sont plus des prototypes : ils effectuent déjà des tâches spécifiques dans des contextes réels. La page 80 insiste sur le fait que leur intégration se fait de manière progressive, car ils sont coûteux, mais très prometteurs dans certains secteurs.</p>
+  </div>
+</section>
+
+<section id="seance3">
+  <h2>🧠 Séance 3 – Apprentissage des robots</h2>
+  <div class="card">
+    <p>Les pages 82 à 85 montrent comment les robots apprennent. L'apprentissage ne passe plus seulement par la programmation, mais aussi par :</p>
+    <ul>
+      <li><strong>L’imitation :</strong> les robots observent les gestes humains pour les reproduire.</li>
+      <li><strong>Les données :</strong> des algorithmes analysent des milliers de cas pour en tirer des règles.</li>
+      <li><strong>L’apprentissage profond :</strong> les réseaux de neurones permettent au robot d’adapter ses comportements à des situations nouvelles.</li>
+    </ul>
+    <img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Artificial_intelligence_learning_diagram.png" alt="Apprentissage IA" />
+    <p>Le manuel montre que ces techniques permettent une plus grande autonomie, mais qu’elles posent aussi la question des erreurs imprévisibles.</p>
+  </div>
+</section>
+
+<section id="seance4">
+  <h2>🚀 Séance 4 – L’avenir des robots humanoïdes</h2>
+  <div class="card">
+    <p>Les pages 86 à 89 s’interrogent sur ce que sera notre monde avec les robots : assistants à domicile, collègues de travail, partenaires médicaux… mais aussi menace pour l’emploi et la vie privée.</p>
+    <p><strong>Avantages :</strong> gain de temps, amélioration de la qualité de vie, accompagnement des personnes âgées.</p>
+    <p><strong>Risques :</strong> surveillance, isolement, perte de contrôle humain sur les décisions automatisées.</p>
+    <img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Humanoid_robot_assisting_elderly.png" alt="Robot aide-soignant" />
+    <p>L’article conclut qu’il faudra poser un cadre éthique, des lois et des limites précises pour éviter les dérives technologiques tout en profitant des apports de la robotique.</p>
+  </div>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
+
+<h2>🤖 Séance 2 – Les Robots Opérationnels</h2>
+<div class="card">
+  <p>Aujourd’hui, les robots humanoïdes ne sont plus simplement cantonnés aux laboratoires ou aux démonstrations de salons technologiques. Comme l’indiquent les pages 78 à 81 du manuel, certains modèles sont déjà <strong>opérationnels</strong>, c’est-à-dire qu’ils sont utilisés dans des environnements réels pour accomplir des tâches concrètes et utiles, parfois à grande échelle.</p>
+
+  <h3>🦿 Définition d’un robot “opérationnel” :</h3>
+  <ul>
+    <li>Un robot est dit “opérationnel” lorsqu’il est <strong>utilisé dans un contexte réel</strong> : entreprise, hôpital, logistique, services…</li>
+    <li>Il ne s’agit plus seulement de tester des fonctions en laboratoire, mais bien d’<strong>accomplir des missions régulières</strong> intégrées à un flux de travail humain.</li>
+  </ul>
+
+  <h3>🤖 Exemples concrets donnés dans le manuel :</h3>
+  <ul>
+    <li><strong>Digit</strong> (Agility Robotics) : robot bipède pour les entrepôts, testé par Amazon, agile et conçu pour porter des colis.</li>
+    <li><strong>Atlas</strong> (Boston Dynamics) : robot athlétique pour tâches de secours, démonstrations industrielles et mouvements complexes.</li>
+    <li><strong>Mirokai</strong> (Japon) : robot médical utilisé dans des hôpitaux pour aider les patients, avec une interface douce et rassurante.</li>
+    <li><strong>Figure 01</strong> (Figure AI) : robot industriel prévu pour manipuler des objets et assister les humains dans les usines.</li>
+  </ul>
+
+  <h3>⚙️ Analyse du manuel :</h3>
+  <p>Les robots opérationnels sont souvent spécialisés : ils ne savent pas tout faire, mais exécutent une fonction précise. Leur intégration est progressive à cause de leur coût, de leur fragilité, et de la nécessité de réorganiser les lieux de travail. Ils sont principalement utilisés dans les domaines de la logistique, de la santé et de l’industrie. La collaboration humain-robot est encore limitée, mais elle évolue chaque année.</p>
+
+  <h3>🧠 Réflexion personnelle :</h3>
+  <p>On sous-estime à quel point les robots sont déjà présents dans certains métiers. Ce ne sont pas des “robots de films”, mais des outils spécialisés qui aident. Cela pose déjà la question : que se passera-t-il quand ils deviendront plus intelligents ? Serons-nous prêts à partager notre espace de travail avec eux ?</p>
+</div>
+
+<h2>🧠 Séance 3 – L’apprentissage des robots</h2>
+<div class="card">
+  <p>Les pages 82 à 85 du manuel expliquent comment les robots apprennent, non pas comme nous, mais par l’analyse de données et des simulations. Ce processus se rapproche d’un apprentissage “artificiel” basé sur des modèles mathématiques.</p>
+
+  <h3>📚 Méthodes d’apprentissage décrites :</h3>
+  <ul>
+    <li><strong>Apprentissage par imitation :</strong> le robot observe les mouvements d’un humain et les reproduit (ex : un bras robotisé qui apprend à verser de l’eau).</li>
+    <li><strong>Apprentissage supervisé :</strong> on donne des exemples précis au robot avec une correction pour qu’il comprenne le bon résultat.</li>
+    <li><strong>Apprentissage par renforcement :</strong> le robot teste plusieurs actions, reçoit une “récompense” pour les bonnes décisions, et s’améliore.</li>
+  </ul>
+
+  <h3>🧠 Intelligence artificielle et autonomie :</h3>
+  <p>Le texte explique que les robots sont de plus en plus capables d’adaptation grâce à des réseaux de neurones artificiels. Grâce à l’IA, ils ne se contentent plus de suivre un programme : ils apprennent à réagir selon des contextes différents.</p>
+  <p>Mais cela crée de nouvelles questions : comment s’assurer qu’ils ne prennent pas de mauvaises décisions ? Que faire si un robot se trompe ou interprète mal une consigne ?</p>
+
+  <img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Artificial_intelligence_learning_diagram.png" alt="Apprentissage IA" />
+
+  <h3>🧠 Réflexion personnelle :</h3>
+  <p>J’ai trouvé intéressant que les robots puissent apprendre comme des enfants : en observant, en testant, en se trompant. Mais ce qui fait réfléchir, c’est qu’ils n’ont pas de morale ni d’émotions. Qui est responsable s’ils causent un accident ?</p>
+</div>
+
+<h2>🚀 Séance 4 – Le futur des robots humanoïdes</h2>
+<div class="card">
+  <p>Les pages 86 à 89 abordent les perspectives d’avenir : dans quelles situations allons-nous utiliser les robots demain ? Que va-t-il se passer si on les intègre massivement dans nos vies ?</p>
+
+  <h3>🌍 Les domaines concernés :</h3>
+  <ul>
+    <li><strong>Santé :</strong> les robots pourraient aider les personnes âgées, rappeler les médicaments, détecter les chutes.</li>
+    <li><strong>Éducation :</strong> des robots enseignants capables de s’adapter au niveau des élèves.</li>
+    <li><strong>Industrie et services :</strong> travail de nuit, manutention, livraison, surveillance…</li>
+  </ul>
+
+  <h3>⚠️ Risques et enjeux :</h3>
+  <p>Le manuel insiste sur les problèmes potentiels : chômage, dépendance à la machine, perte de lien social, données personnelles en danger. Si les robots remplacent les humains dans trop de domaines, des millions de personnes pourraient perdre leur emploi.</p>
+
+  <img class="illustration" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Humanoid_robot_assisting_elderly.png" alt="Robot aide-soignant" />
+
+  <h3>🧠 Réflexion personnelle :</h3>
+  <p>Le progrès technologique est impressionnant, mais il doit s’accompagner d’un cadre clair. Ce n’est pas parce qu’on peut tout faire qu’on doit tout faire. À mon avis, les robots doivent rester des assistants, pas des remplaçants.</p>
+</div>
